@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrapcdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>SUDEKO SOLVER </title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <div class="alert alert-danger" role="alert" id="alerting">
+        <h2 class="alert-heading" style="text-align:center">INVALID BOARD</h2>
+        <p style="text-align:center">
+            <ul>
+                <li>REMEMBER THE BOARD SHOULD BE BETWEEN 0 AND 9</li>
+                <li>REMEMBER THAT SAME ELEMENT SHOULD BE REPEATING IN A ROW,COLUMN AND 3 X 3 box</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="container">
+        <h1 class="mt-5">SODUKU SOLVER</h1>
+        <h2 id="rul3">FOLLOW ALL THE RULES OF SUDOKU</h2>
+
+        <div class="table-responsive question">
+            <table class="table-sm table-bordered text-center" id="tableval">
+                <tr id='tableval1'></tr>
+                <tr id='tableval2'></tr>
+                <tr id='tableval3'></tr>
+
+                <tr id='tableval4'></tr>
+                <tr id='tableval5'></tr>
+                <tr id='tableval6'></tr>
+
+                <tr id='tableval7'></tr>
+                <tr id='tableval8'></tr>
+                <tr id='tableval9'></tr>
+            </table>
+        </div>
+        <div class=buttons>
+            <button id="solveit" class="mt-5 mb-5 mr-5">SOLVE</button>
+            <form action="index.html" class="d-inline">
+                <button id="refresh" class="mt-5 mb-5">REFRESH</button>
+            </form>
+        </div>
+
+        <div class="table-responsive solution">
+            <h2 id="h2solved">SOlVED</h2>
+            <h3 id="empty">THANK FOR MAKING IT EASY FOR ME BY LEAVING IT EMPTY!!</h3>
+
+            <table class=" table-sm table-bordered text-center" id="tableresult">
+                <tr id='tableresult1'></tr>
+                <tr id='tableresult2'></tr>
+                <tr id='tableresult3'></tr>
+
+                <tr id='tableresult4'></tr>
+                <tr id='tableresult5'></tr>
+                <tr id='tableresult6'></tr>
+
+                <tr id='tableresult7'></tr>
+                <tr id='tableresult8'></tr>
+                <tr id='tableresult9'></tr>
+
+            </table>
+        </div>
+    </div>
+    <!-- bootstrapcdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+    <script src="index.js "></script>
+</body>
+
+</html>
